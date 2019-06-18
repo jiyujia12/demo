@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>酒店预订</title>
+    <style type="text/css">
+    /* 重置样式 */
+*{
+    padding:0;
+    margin:0;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+li{
+    list-style: none;
+}
+
+.box{
+    margin:0 auto;
+    width:1200px;
+    height:175px;
+}
+/* 头部 */
+.top{
+    margin-bottom:32px;
+    margin-top:12px;
+    font-size:14px;
+}
+.top1{
+    padding-left:526px;
+}
+
+/* logo那行 */
+.logo{
+    height:71px;
+}
+.logo .photo{
+    float:left;
+}
+.search1{
+    margin-top:14px;
+    padding-top:3px;
+    margin-left:174px;
+    width:540px;
+    height:41px;
+    text-align:center;
+    color:rgb(214,214,214);
+    float:left;
+    border:1px solid rgb(57,57,66);
+}
+.search2{
+    margin-top:14px;
+}
+.cart{
+    margin-left:148px;
+    margin-bottom:10px;
+}
+
+/* 导航 */
+.shop{
+    padding-left:5px;
+}
+.nav{
+    margin-top:20px;
+}
+.nav li{
+    display:inline-block;
+    height:40px;
+    text-align:center;
+    line-height: 20px;
+}
+.nav .shop li{
+    width:120px;
+}
+.nav .shouye{
+    width:60px;
+}
+.nav .chanpin li{
+    margin-left:35px;
+    width:80px;
+    height:30px;
+}
+.nav .chanpin li:hover{
+    color: #3aa747;
+    border-bottom: 3px solid #3aa747;
+}
+/* 翡翠图片 */
+.banner{
+    height:670px;
+    background-image:url(img/banner.png);
+    border-top:4px solid #3aa747;
+}
+.right{
+    text-align:center;
+    line-height:120px;
+    position:fixed;
+    right:0;
+    float:right;
+    background-color: rgb(2,10,9);
+    
+}
+.right li{
+    width: 74px;
+    height:120px;
+    border-bottom:1px solid rgb(89,94,93);
+}
+.right li img{
+    text-align:center;
+    line-height:120px;
+}
+
+.box2{
+    margin:0 auto;
+    width:1200px;
+    height:1018px;
+}
+/* 首页那行 */
+.shouye{
+    height:62px;
+    width:1198px;
+    line-height: 60px;
+    text-align: center;
+}
+
+/* 三行表 */
+.biao{
+    height:135px;
+    width:1198px;
+    border:1px solid rgb(204,204,204);
+
+}
+.yushi{
+    border-bottom: 1px solid rgb(204,204,204);
+}
+.yushi li{
+    display:inline-block;
+    width:101px;
+    height:44px;
+    text-align:center;
+    line-height: 44px;
+}
+.qita{
+    border-bottom: 1px solid rgb(204,204,204);
+}
+.qita li{
+    display:inline-block;
+    width:101px;
+    height:44px;
+    text-align:center;
+    line-height: 44px;
+}
+.diqu li{
+    display:inline-block;
+    width:101px;
+    height:44px;
+    text-align:center;
+    line-height: 44px;
+}
+.beijing{
+    background-color:rgb(229,229,229);
+}
+
+/* 八张图 */
+.center{
+    float:right;
+    display: inline-block;
+    margin-top:60px;
+}
+.center li{
+    float:left;
+    width:270px;
+    height:290px;
+    border:1px solid rgb(135,135,135);
+    margin-right:33px;
+    margin-bottom:35px;
+    position: relative;
+}
+.center img{
+    width:270px;
+    height:290px;
+}
+.word{
+    width:270px;
+    height:48px;
+    text-align:center;
+    background:#000;
+    position: absolute;
+    color:rgb(255,255,255);
+    opacity: 0.7;
+    bottom:0;
+    padding-top:4px;
+}
+.center li:hover .word{
+    background: #000;
+    opacity: 0.7;
+    width:270px;
+    height:191px;
+    position: absolute;
+    bottom:0;
+    padding-top:100px;
+    font-size:20px;
+}
+.center li:hover .word p{
+    padding-top:15px;
+}
+
+.box3{
+    margin:0 auto;
+    height:99px;
+    background-color:rgb(245,245,245);
+}
+.zizhi{
+    width:1200px;
+    margin:0 auto;
+}
+/* 资质认证那行 */
+.zizhi li{
+    display:inline-block;
+    width:252px;
+    height:51px;
+    margin-top:30px;
+    border-right:1px solid rgb(226,226,226);
+    margin-right:45px;
+}
+
+.zizhi1{
+    background: url(img/f1.png) no-repeat left;   
+}
+.zizhi1 p{
+    padding-left:70px;
+}
+
+.zizhi2{
+    background: url(img/f2.png) no-repeat left;   
+}
+.zizhi2 p{
+    padding-left:70px;
+}
+
+.zizhi3{
+    background: url(img/f3.png) no-repeat left;   
+}
+.zizhi3 p{
+    padding-left:70px;
+}
+
+.zizhi4{
+    background: url(img/f4.png) no-repeat left;   
+}
+.zizhi4 p{
+    padding-left:70px;
+}
+.p1{
+    font-size:18px;
+
+}
+.p2{
+    font-size:14px;
+}
+
+
+.box4{
+    margin:0 auto;
+    height:106px;
+    background-color:rgb(50,50,50);
+}
+
+/* 底部 */
+.black{
+    width:1200px;
+    margin:0 auto;
+    text-align: center;
+    padding-top:10px;
+}
+.black p{
+    margin-top:20px;
+    color:rgb(255,255,255);
+}
+.black .white{
+    color:rgb(255,255,255);
+    padding-right:10px;
+}
+</style>
+</head>
+<body>
+<div class="box">
+
+    <!-- 头部 -->
+    <div class="top">
+    <span class="top1">
+        <a>嘿！欢迎来到买猜商城!</a>
+        <a href="#" style="padding-left:36px;">请登录</a>
+        <a href="#" style="padding-left:36px;">免费注册</a>
+    </span>
+    <span>
+        <a href="#" style="padding-left:32px;">我的订单</a>
+        <a href="#" style="padding-left:16px;"><img src="img/arrow.png"/></a>
+        <a href="#" style="padding-left:7px;">我的买猜</a>
+        <a href="#" style="padding-left:7px;"><img src="img/arrow.png"/></a>
+        <a href="#" style="padding-left:7px;">帮助中心</a>
+    </span>
+    <span>
+        <a href="#" style="padding-left:30px;"><img src="img/wb.png"/></a>
+        <a href="#"><img src="img/wx.png"/></a>
+    </span>
+    </div>
+    
+    <!-- logo那行 -->
+    <div class="logo">
+        <span class="photo">
+            <img src="img/logo.png"/>
+        </span>
+
+        <span class="search">
+            <input class="search1" type="text" name="search1" value="请输入搜索内容"/>
+            <a href="#"><img class="search2" src="img/search.jpg"/></a>
+        </span>
+
+        <span class="cart">
+            <a href="#"><img src="img/cart.png"/></a>
+        </span>
+    </div>
+        
+    
+    <!-- 导航 -->
+    <ul class="nav">
+        <a class="shop" href="#">
+            <li><b style="padding-left:11px;">全部商品分类</b></li>
+            <img src="img/arrow.png"/>
+        </a>
+        <a href="#"><li class="shouye" style="padding-left:20px;">首页</li></a>
+        <span class="chanpin">
+            <a href="#"><li>名酒</li></a>
+            <a href="#"><li>茗茶</li></a>
+            <a href="#"><li>玉石</li></a>
+            <a href="#"><li>休闲食品</li></a>
+            <a href="#"><li>洗护用品</li></a>
+            <a href="#"><li>土特产</li></a>
+            <a href="#"><li>积分商城</li></a>
+            <a href="#"><li>抽奖游戏</li></a>
+        </span>
+        
+    </ul>
+</div>
+    <!-- 翡翠图片 -->
+    <div class="banner">
+    <ul class="right">
+        <li class="cart1"><img src="img/cart1.png"/></li>
+        <li class="qq"><img src="img/qq.png"/></li>
+        <li class="gotop"><img src="img/zuji.png"/></li>   
+        <li class="erweima"><img src="img/erweima.png"/></li>
+        <li class="zuji"><img src="img/gotop.png"/></li>   
+    </ul>
+    </div>
+    
+    <!-- 首页那行 -->
+<div class="box2">
+    <div class="name">
+        <div class="shouye">
+                <a href="#" style="font-size:17px;float:left;">首页</a>
+                <a href="#" style="font-size:17px;float:left;margin-left:12px;">></a>
+                <a href="#" style="font-size:13px;float:left;margin-left:12px;">玉石</a>
+                <a href="#" style="font-size:14px;float:right;">共200件相关商品</a>
+        </div>
+    </div>
+    
+
+    <!-- 三行表 -->
+    <div class="biao">
+        <ul class="yushi">
+            <a href="#"><li class="beijing">玉石</li></a>
+            <a href="#"><li>白玉</li></a>
+            <a href="#"><li>碧玉</li></a>
+            <a href="#"><li>黄玉</li></a>
+            <a href="#"><li>和田玉</li></a>
+            <a href="#"><li style="color:#3aa747;">翡翠</li></a>
+            <a href="#"><li>绿松玉</li></a>
+            <a href="#"><li>墨玉</li></a>    
+        </ul>
+        <ul class="qita">
+            <a href="#"><li class="beijing">其他</li></a>
+            <a href="#"><li style="color:#3aa747;">吊坠</li></a>
+            <a href="#"><li>扳指</li></a>
+            <a href="#"><li>手镯</li></a>
+        </ul>
+        <ul class="diqu">
+            <a href="#"><li class="beijing">地区</li></a>
+            <a href="#"><li>北京</li></a>
+            <a href="#"><li>安徽</li></a>
+            <a href="#"><li>福建</li></a>
+            <a href="#"><li>内蒙古</li></a>
+            <a href="#"><li>宁夏</li></a>
+            <a href="#"><li>黑龙江</li></a>                
+            <a href="#"><li>河北</li></a>
+            <a href="#"><li style="float:right;font-size:14px;">更多</li></a>
+            </ul>
+    </div>
+
+    <!-- 八张图 -->
+    <ul class="center">
+        <li>
+            <img src="img/img1.png"/>
+            <div class="word">
+                    <p>竞猜价：¥ 399.00</p>
+                    <p>翡翠千手观音吊坠</p>
+            </div>
+        </li>
+        <li>
+            <img src="img/img2.png"/>
+            <div class="word">
+                    <p>竞猜价：¥ 1980.00</p>
+                    <p>翡翠龙凤吊坠</p>
+            </div>
+        </li>
+
+        <li>
+            <img style="width:270px" src="img/img3.png"/>
+            <div class="word">
+                    <p>竞猜价：¥ 199.00</p>
+                    <p>翡翠花蕊吊坠</p>
+            </div>
+        </li>
+
+        <li style="margin-right:0;">
+            <img src="img/img4.png"/>
+            <div class="word">
+                    <p>竞猜价：¥ 199.00</p>
+                    <p>翡翠如意吊坠</p>
+            </div>
+        </li>
+        
+        <li>
+            <img src="img/img5.png"/>
+            <div class="word">
+                    <p>竞猜价：¥ 399.00</p>
+                    <p>翡翠禅吊坠</p>
+            </div>
+        </li>
+
+        <li>
+            <img src="img/img6.png"/>
+            <div class="word">
+                    <p>竞猜价：¥ 399.00</p>
+                    <p>翡翠观音（浅色）吊坠</p>
+            </div>
+        </li>
+
+        <li>
+            <img src="img/img7.png"/>
+            <div class="word">
+                    <p>竞猜价：¥ 199.00</p>
+                    <p>翡翠平安扣（深色）吊坠</p>
+            </div>        
+        </li>
+
+        <li style="margin-right:0;">
+            <img src="img/img8.png"/>
+            <div class="word">
+                    <p>竞猜价：¥ 199.00</p>
+                    <p>翡翠如意吊坠</p>
+            </div>
+        </li>
+
+    </ul>
+</div>
+
+<div class="box3">
+    <!-- 资质认证那行 -->
+    <ul class="zizhi">
+        <li class="zizhi1" style="margin-left:28px;">
+            <p class="p1">资质认证</p>
+            <p class="p2">服务商100%实名认证</p>
+        </li>
+
+        <li class="zizhi2">
+            <p class="p1">支付安全</p>
+            <p class="p2">明码标价支付及信息安全</p>
+        </li>
+
+        <li class="zizhi3">
+            <p class="p1">保险赔付</p>
+            <p class="p2">为您提供担保赔付</p>
+        </li>
+
+        <li class="zizhi4" style="margin-right:0;border:none;">
+            <p class="p1">售后无忧</p>
+            <p class="p2">服务出问题经理全程跟进</p>
+        </li>
+
+    </ul>
+</div>
+
+<div class="box4">
+    <!-- 底部 -->
+
+    <div class="black">
+        <p>
+            <a class="white">首页</a>
+            <a class="white">|</a>
+            <a class="white">厂商代理</a>
+            <a class="white">|</a>
+            <a class="white">财务代记账</a>
+            <a class="white">|</a>
+            <a class="white">版权交易与变更</a>
+            <a class="white">|</a>                
+            <a class="white">企业贷款</a>
+            <a class="white">|</a>
+            <a class="white">办公室租赁</a>
+            <a class="white">|</a>
+            <a class="white">社保公积金代理</a>
+            <a class="white">|</a>
+            <a class="white">法律服务 </a>
+        </p>    
+        <p>© 2017-2020 买猜商城有限公司 版权所有</p>
+    </div>
+
+</div>
+
+</body>
+</html>
